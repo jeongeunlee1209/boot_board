@@ -1,0 +1,31 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+    static-path-pattern: /**
+---
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+  tomcat:
+    uri-encoding: UTF-8
+  port : 8084
+---
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://database-lib.cpvzaohbq23h.ap-northeast-2.rds.amazonaws.com:3306/Minus
+    username: admin
+    password: 1q1qjmk2832
+---
+spring:
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+---
+spring:
+  main:
+    allow-bean-definition-overriding: true
