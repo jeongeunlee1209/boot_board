@@ -14,13 +14,6 @@ server:
   port : 8084
 ---
 spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://database-lib.cpvzaohbq23h.ap-northeast-2.rds.amazonaws.com:3306/Minus
-    username: admin
-    password: 1q1qjmk2832
----
-spring:
   jpa:
     hibernate:
       naming:
